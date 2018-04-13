@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HTKeyChain: NSObject {
+Public class HTKeyChain: NSObject {
     func createDefaultKeyChainItemDic() -> NSMutableDictionary {
         let keyChainItem = NSMutableDictionary()
         keyChainItem.setObject(kSecClassInternetPassword as NSString, forKey: kSecClass as NSString)

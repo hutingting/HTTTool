@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 import MediaPlayer
 
-class HTTMusicTool: NSObject {
+Public class HTTMusicTool: NSObject {
     //单利化
     static let sharedInstance = HTTMusicTool()
     //定义一个播放器的变量

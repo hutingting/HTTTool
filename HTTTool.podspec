@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "HTTTool"
-  s.version      = "0.1.0"
+  s.version      = "0.1.3"
   s.summary      = "基础工具类"
   s.description  = "tool test"
   s.homepage     = "https://github.com/hutingting/HTTTool"
@@ -51,7 +51,7 @@ Pod::Spec.new do |s|
    s.platform     = :ios, "8.0"
 
   #  When using multiple platforms
-  # s.ios.deployment_target = "5.0"
+  s.ios.deployment_target = "8.0"
   # s.osx.deployment_target = "10.7"
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
@@ -74,7 +74,8 @@ s.source       = { :git => "https://github.com/hutingting/HTTTool.git", :tag => 
 #  Not including the public_header_files will make all headers public.
 #
 
-#s.source_files  = "HTTTool", "HTTTool/HTTTooling/HTTMusicTool.swift"
+
+ s.source_files  = "HTTTool", "HTTTool/*.swift"
 
  s.subspec 'HTMusicTool' do |cos|
  cos.source_files  = "HTTTool", "HTTTool/HTTMusicTool.swift"
@@ -82,10 +83,11 @@ s.source       = { :git => "https://github.com/hutingting/HTTTool.git", :tag => 
 
  s.subspec 'HTKeyChain' do |hk|
  hk.source_files  = "HTTTool", "HTTTool/HTKeyChain.swift"
+#hk.dependency "HTTTool/common" , "0.0.2"
  end
 
 #s.exclude_files = "Classes/Exclude"
-# s.public_header_files = "Classes/**/*.h"
+#s.public_header_files = "Classes/**/*.h"
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -123,4 +125,5 @@ s.source       = { :git => "https://github.com/hutingting/HTTTool.git", :tag => 
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
+ s.requires_arc = true
 end
