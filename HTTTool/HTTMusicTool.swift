@@ -12,11 +12,11 @@ import MediaPlayer
 
 public class HTTMusicTool: NSObject {
     //单利化
-    static let sharedInstance = HTTMusicTool()
+   public static let sharedInstance = HTTMusicTool()
     //定义一个播放器的变量
     private var  audioPlayer: AVAudioPlayer?
     //初始化
-    override init() {
+   public override init() {
         super.init()
         setPathMusic(name: "")
     }
