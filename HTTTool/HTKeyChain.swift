@@ -8,7 +8,7 @@
 
 import UIKit
 
-Public class HTKeyChain: NSObject {
+public class HTKeyChain: NSObject {
     func createDefaultKeyChainItemDic() -> NSMutableDictionary {
         let keyChainItem = NSMutableDictionary()
         keyChainItem.setObject(kSecClassInternetPassword as NSString, forKey: kSecClass as NSString)
@@ -25,7 +25,7 @@ Public class HTKeyChain: NSObject {
     /// - parameter file:     文件名
     /// - parameter method:   方法名
     /// - parameter line:     代码行数
-    func printLog<T>(message: T,
+   public func printLog<T>(message: T,
                      logError: Bool = false,
                      file: String = #file,
                      method: String = #function,

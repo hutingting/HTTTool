@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 import MediaPlayer
 
-Public class HTTMusicTool: NSObject {
+public class HTTMusicTool: NSObject {
     //单利化
     static let sharedInstance = HTTMusicTool()
     //定义一个播放器的变量
@@ -22,7 +22,7 @@ Public class HTTMusicTool: NSObject {
     }
 
     //添加本地音乐播放源
-    func setPathMusic(name:String) {
+   public func setPathMusic(name:String) {
             let path = Bundle.main.path(forResource: name, ofType: "mp3") //保证名字正确并匹配否则会报错
             let pathURL = NSURL(fileURLWithPath: path!)
             do {
@@ -37,17 +37,17 @@ Public class HTTMusicTool: NSObject {
     }
 
     //开始播放
-    func play() {
+   public func play() {
         audioPlayer?.play()
     }
 
     //暂停
-    func pause() {
+   public func pause() {
         audioPlayer?.pause()
     }
 
     //停止
-    func stop() {
+   public func stop() {
         audioPlayer?.stop()
     }
 }

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "HTTTool"
-  s.version      = "0.1.3"
+  s.version      = "0.1.4"
   s.summary      = "基础工具类"
   s.description  = "tool test"
   s.homepage     = "https://github.com/hutingting/HTTTool"
@@ -73,9 +73,6 @@ s.source       = { :git => "https://github.com/hutingting/HTTTool.git", :tag => 
 #  For header files it will include any header in the folder.
 #  Not including the public_header_files will make all headers public.
 #
-
-
- s.source_files  = "HTTTool", "HTTTool/*.swift"
 
  s.subspec 'HTMusicTool' do |cos|
  cos.source_files  = "HTTTool", "HTTTool/HTTMusicTool.swift"
