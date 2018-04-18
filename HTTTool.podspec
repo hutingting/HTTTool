@@ -76,20 +76,10 @@ s.source       = { :git => "https://github.com/hutingting/HTTTool.git", :tag => 
 
  s.subspec 'Common' do |com|
  com.source_files  = "HTTTool", "Common/*.swift"
- com.framework  = "AVFoundation","MediaPlayer"
+ com.framework  = "AVFoundation","MediaPlayer","MBProgressHUD"
  end
 
- s.subspec 'HTMusicTool' do |av|
- av.source_files  = "HTTTool", "Common/HTTMusicTool.swift"
- av.framework  = "AVFoundation","MediaPlayer"
- av.dependency "HTTTool/common" , "0.0.1"
- end
 
- s.subspec 'HTKeyChain' do |hk|
- hk.source_files  = "HTTTool", "Common/HTKeyChain.swift"
- hk.dependency "HTTTool/common" , "0.0.2"
- hk.dependency "HTTTool/Core"
- end
 
 #s.exclude_files = "Classes/Exclude"
 #s.public_header_files = "Classes/**/*.h"

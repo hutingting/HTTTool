@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E31A3BC8170EF2F4AE0168B /* Pods_HTTToolDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B2BD9A99D98A8A540D43988 /* Pods_HTTToolDemo.framework */; };
 		F25C4DBF207F334000AAF5BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25C4DBE207F334000AAF5BE /* AppDelegate.swift */; };
 		F25C4DC1207F334000AAF5BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25C4DC0207F334000AAF5BE /* ViewController.swift */; };
 		F25C4DC4207F334000AAF5BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F25C4DC2207F334000AAF5BE /* Main.storyboard */; };
@@ -35,6 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B2BD9A99D98A8A540D43988 /* Pods_HTTToolDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HTTToolDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		10842B7B4D36472BA9D706C4 /* Pods_HTTToolDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HTTToolDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3173DCF4274FE25D545EAAE0 /* Pods-HTTToolDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HTTToolDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HTTToolDemo/Pods-HTTToolDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		A3E91168B64A70F0146C8CC9 /* Pods-HTTToolDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HTTToolDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-HTTToolDemo/Pods-HTTToolDemo.release.xcconfig"; sourceTree = "<group>"; };
+		B0DA793C4A51AFED975AF5B4 /* Pods_HTTToolDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HTTToolDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F25C4DBB207F334000AAF5BE /* HTTToolDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HTTToolDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F25C4DBE207F334000AAF5BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F25C4DC0207F334000AAF5BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E31A3BC8170EF2F4AE0168B /* Pods_HTTToolDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +83,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15494B09B58D0D9DC9F97C06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B2BD9A99D98A8A540D43988 /* Pods_HTTToolDemo.framework */,
+				10842B7B4D36472BA9D706C4 /* Pods_HTTToolDemoTests.framework */,
+				B0DA793C4A51AFED975AF5B4 /* Pods_HTTToolDemoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		493986A12B56741C5F979324 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3173DCF4274FE25D545EAAE0 /* Pods-HTTToolDemo.debug.xcconfig */,
+				A3E91168B64A70F0146C8CC9 /* Pods-HTTToolDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F25C4DB2207F334000AAF5BE = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +109,8 @@
 				F25C4DD2207F334200AAF5BE /* HTTToolDemoTests */,
 				F25C4DDD207F334200AAF5BE /* HTTToolDemoUITests */,
 				F25C4DBC207F334000AAF5BE /* Products */,
+				493986A12B56741C5F979324 /* Pods */,
+				15494B09B58D0D9DC9F97C06 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,9 +163,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F25C4DE3207F334200AAF5BE /* Build configuration list for PBXNativeTarget "HTTToolDemo" */;
 			buildPhases = (
+				DE9C1B9B3756D3B89803CF7B /* [CP] Check Pods Manifest.lock */,
 				F25C4DB7207F334000AAF5BE /* Sources */,
 				F25C4DB8207F334000AAF5BE /* Frameworks */,
 				F25C4DB9207F334000AAF5BE /* Resources */,
+				2CD95EF6248027616354DC13 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,6 +284,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CD95EF6248027616354DC13 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HTTToolDemo/Pods-HTTToolDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HTTToolDemo/Pods-HTTToolDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE9C1B9B3756D3B89803CF7B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HTTToolDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F25C4DB7207F334000AAF5BE /* Sources */ = {
@@ -432,15 +501,13 @@
 		};
 		F25C4DE4207F334200AAF5BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3173DCF4274FE25D545EAAE0 /* Pods-HTTToolDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z9NE8RYJFN;
 				INFOPLIST_FILE = HTTToolDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tingting.hu.HTTToolDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -450,15 +517,13 @@
 		};
 		F25C4DE5207F334200AAF5BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3E91168B64A70F0146C8CC9 /* Pods-HTTToolDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z9NE8RYJFN;
 				INFOPLIST_FILE = HTTToolDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tingting.hu.HTTToolDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -474,11 +539,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z9NE8RYJFN;
 				INFOPLIST_FILE = HTTToolDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tingting.hu.HTTToolDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -495,11 +556,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z9NE8RYJFN;
 				INFOPLIST_FILE = HTTToolDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tingting.hu.HTTToolDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -515,11 +572,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z9NE8RYJFN;
 				INFOPLIST_FILE = HTTToolDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tingting.hu.HTTToolDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -535,11 +588,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z9NE8RYJFN;
 				INFOPLIST_FILE = HTTToolDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tingting.hu.HTTToolDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
