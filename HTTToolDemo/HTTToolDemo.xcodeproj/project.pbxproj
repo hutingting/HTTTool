@@ -15,7 +15,7 @@
 		F25C4DC9207F334200AAF5BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F25C4DC7207F334200AAF5BE /* LaunchScreen.storyboard */; };
 		F25C4DD4207F334200AAF5BE /* HTTToolDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25C4DD3207F334200AAF5BE /* HTTToolDemoTests.swift */; };
 		F25C4DDF207F334200AAF5BE /* HTTToolDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25C4DDE207F334200AAF5BE /* HTTToolDemoUITests.swift */; };
-		F25DD72D20872069001BFD1E /* Common in Resources */ = {isa = PBXBuildFile; fileRef = F25DD72C20872069001BFD1E /* Common */; };
+		F25DD73120872A09001BFD1E /* Sources in Resources */ = {isa = PBXBuildFile; fileRef = F25DD73020872A09001BFD1E /* Sources */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +54,7 @@
 		F25C4DDA207F334200AAF5BE /* HTTToolDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HTTToolDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F25C4DDE207F334200AAF5BE /* HTTToolDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTToolDemoUITests.swift; sourceTree = "<group>"; };
 		F25C4DE0207F334200AAF5BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F25DD72C20872069001BFD1E /* Common */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Common; path = ../../Common; sourceTree = "<group>"; };
+		F25DD73020872A09001BFD1E /* Sources */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Sources; path = ../../Sources; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +127,7 @@
 		F25C4DBD207F334000AAF5BE /* HTTToolDemo */ = {
 			isa = PBXGroup;
 			children = (
-				F25DD72C20872069001BFD1E /* Common */,
+				F25DD73020872A09001BFD1E /* Sources */,
 				F25C4DBE207F334000AAF5BE /* AppDelegate.swift */,
 				F25C4DC0207F334000AAF5BE /* ViewController.swift */,
 				F25C4DC2207F334000AAF5BE /* Main.storyboard */,
@@ -264,8 +264,8 @@
 			files = (
 				F25C4DC9207F334200AAF5BE /* LaunchScreen.storyboard in Resources */,
 				F25C4DC6207F334200AAF5BE /* Assets.xcassets in Resources */,
+				F25DD73120872A09001BFD1E /* Sources in Resources */,
 				F25C4DC4207F334000AAF5BE /* Main.storyboard in Resources */,
-				F25DD72D20872069001BFD1E /* Common in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,7 +507,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z9NE8RYJFN;
 				INFOPLIST_FILE = HTTToolDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = tingting.hu.HTTToolDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -523,7 +526,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z9NE8RYJFN;
 				INFOPLIST_FILE = HTTToolDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = tingting.hu.HTTToolDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -539,7 +545,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z9NE8RYJFN;
 				INFOPLIST_FILE = HTTToolDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = tingting.hu.HTTToolDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -556,7 +566,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z9NE8RYJFN;
 				INFOPLIST_FILE = HTTToolDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = tingting.hu.HTTToolDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -572,7 +586,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z9NE8RYJFN;
 				INFOPLIST_FILE = HTTToolDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = tingting.hu.HTTToolDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -588,7 +606,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z9NE8RYJFN;
 				INFOPLIST_FILE = HTTToolDemoUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = tingting.hu.HTTToolDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

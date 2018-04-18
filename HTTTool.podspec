@@ -75,11 +75,9 @@ s.source       = { :git => "https://github.com/hutingting/HTTTool.git", :tag => 
 #
 
  s.subspec 'Common' do |com|
- com.source_files  = "HTTTool", "Common/*.swift"
- com.framework  = "AVFoundation","MediaPlayer","MBProgressHUD"
+ com.source_files  = "Sources/UI/HUD"
+ com.dependency 'MBProgressHUD' ,'~> 1.1.0'
  end
-
-
 
 #s.exclude_files = "Classes/Exclude"
 #s.public_header_files = "Classes/**/*.h"
