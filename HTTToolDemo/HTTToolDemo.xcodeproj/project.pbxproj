@@ -14,7 +14,7 @@
 		F25C4DC9207F334200AAF5BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F25C4DC7207F334200AAF5BE /* LaunchScreen.storyboard */; };
 		F25C4DD4207F334200AAF5BE /* HTTToolDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25C4DD3207F334200AAF5BE /* HTTToolDemoTests.swift */; };
 		F25C4DDF207F334200AAF5BE /* HTTToolDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F25C4DDE207F334200AAF5BE /* HTTToolDemoUITests.swift */; };
-		F25C4DEF207F341300AAF5BE /* HTTTool in Resources */ = {isa = PBXBuildFile; fileRef = F25C4DEE207F341300AAF5BE /* HTTTool */; };
+		F25DD72D20872069001BFD1E /* Common in Resources */ = {isa = PBXBuildFile; fileRef = F25DD72C20872069001BFD1E /* Common */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +48,7 @@
 		F25C4DDA207F334200AAF5BE /* HTTToolDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HTTToolDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F25C4DDE207F334200AAF5BE /* HTTToolDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTToolDemoUITests.swift; sourceTree = "<group>"; };
 		F25C4DE0207F334200AAF5BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F25C4DEE207F341300AAF5BE /* HTTTool */ = {isa = PBXFileReference; lastKnownFileType = folder; name = HTTTool; path = ../HTTTool; sourceTree = "<group>"; };
+		F25DD72C20872069001BFD1E /* Common */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Common; path = ../../Common; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +79,6 @@
 		F25C4DB2207F334000AAF5BE = {
 			isa = PBXGroup;
 			children = (
-				F25C4DEE207F341300AAF5BE /* HTTTool */,
 				F25C4DBD207F334000AAF5BE /* HTTToolDemo */,
 				F25C4DD2207F334200AAF5BE /* HTTToolDemoTests */,
 				F25C4DDD207F334200AAF5BE /* HTTToolDemoUITests */,
@@ -100,6 +99,7 @@
 		F25C4DBD207F334000AAF5BE /* HTTToolDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F25DD72C20872069001BFD1E /* Common */,
 				F25C4DBE207F334000AAF5BE /* AppDelegate.swift */,
 				F25C4DC0207F334000AAF5BE /* ViewController.swift */,
 				F25C4DC2207F334000AAF5BE /* Main.storyboard */,
@@ -233,9 +233,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F25C4DC9207F334200AAF5BE /* LaunchScreen.storyboard in Resources */,
-				F25C4DEF207F341300AAF5BE /* HTTTool in Resources */,
 				F25C4DC6207F334200AAF5BE /* Assets.xcassets in Resources */,
 				F25C4DC4207F334000AAF5BE /* Main.storyboard in Resources */,
+				F25DD72D20872069001BFD1E /* Common in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

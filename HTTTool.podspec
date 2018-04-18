@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "HTTTool"
-  s.version      = "0.1.4"
+  s.version      = "0.1.5"
   s.summary      = "基础工具类"
   s.description  = "tool test"
   s.homepage     = "https://github.com/hutingting/HTTTool"
@@ -74,13 +74,21 @@ s.source       = { :git => "https://github.com/hutingting/HTTTool.git", :tag => 
 #  Not including the public_header_files will make all headers public.
 #
 
- s.subspec 'HTMusicTool' do |cos|
- cos.source_files  = "HTTTool", "HTTTool/HTTMusicTool.swift"
+ s.subspec 'Common' do |com|
+ com.source_files  = "HTTTool", "Common/*.swift"
+ com.framework  = "AVFoundation","MediaPlayer"
+ end
+
+ s.subspec 'HTMusicTool' do |av|
+ av.source_files  = "HTTTool", "Common/HTTMusicTool.swift"
+ av.framework  = "AVFoundation","MediaPlayer"
+ av.dependency "HTTTool/common" , "0.0.1"
  end
 
  s.subspec 'HTKeyChain' do |hk|
- hk.source_files  = "HTTTool", "HTTTool/HTKeyChain.swift"
-#hk.dependency "HTTTool/common" , "0.0.2"
+ hk.source_files  = "HTTTool", "Common/HTKeyChain.swift"
+ hk.dependency "HTTTool/common" , "0.0.2"
+ hk.dependency "HTTTool/Core"
  end
 
 #s.exclude_files = "Classes/Exclude"

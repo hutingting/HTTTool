@@ -6,7 +6,7 @@
 //  Copyright © 2018年 tingtingHu. All rights reserved.
 //
 
-import UIKit
+
 import AVFoundation
 import MediaPlayer
 
